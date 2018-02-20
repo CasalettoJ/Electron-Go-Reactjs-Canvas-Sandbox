@@ -4,7 +4,7 @@
   "description": "Test electron frontend for app",
   "main": "main.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack; protoc --go_out=plugins=grpc:. proto/*.proto; go build -o serverExec server/main.go",
     "start": "electron ."
   },
   "author": "",
@@ -23,6 +23,7 @@
     "webpack": "^3.11.0"
   },
   "dependencies": {
+    "grpc": "^1.9.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
