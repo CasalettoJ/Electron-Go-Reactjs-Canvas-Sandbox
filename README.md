@@ -1,8 +1,10 @@
 gRPC + Go + Reactjs
 
-Setup:
+Setup: >>> Currently build only valid for macs
 
-(Requires Go; npm;yarn)
+(Requires Go; npm/yarn; protocol buffers)
+
+```brew install protoc```  >>> macOS only, look up Windows instructions
 
 ```go get google.golang.org/grpc```
 
